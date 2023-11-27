@@ -1,0 +1,27 @@
+/* App.css */
+
+.cardContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background-color: #212121;
+}
+
+.coinCard {
+  margin: 15px;
+  width: 200px; /* Two cards in one row for larger screens */
+  min-height: 100px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+@media (max-width: 767px) {
+  /* Adjust for smaller screens */
+  .coinCard {
+    width: calc(100% - 30px); /* Full width for smaller screens */
+  }
+}
